@@ -1,19 +1,17 @@
 package util;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
+@AllArgsConstructor
 @Getter
 public class Point {
 
-  public float x;
-  public float y;
+    private float x;
+    private float y;
 
-  public Point(float x, float y) {
-    this.x = x;
-    this.y = y;
-  }
+    public Point plus(float x0, float y0) {
+        return new Point(x + x0, y + y0);
+    }
 
-  public Point move(float xDiff, float yDiff) {
-    return new Point(x + xDiff, y + yDiff);
-  }
 }

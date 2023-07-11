@@ -1,10 +1,10 @@
 package util;
 
 public enum Orientation {
-  HORIZONTAL,
-  VERTICAL;
+    HORIZONTAL,
+    VERTICAL;
 
-  public Orientation opposite() {
-    return this == HORIZONTAL ? VERTICAL : HORIZONTAL;
-  }
+    public Orientation opposite() {
+        return this == HORIZONTAL ? VERTICAL : HORIZONTAL;
+    }
 }
